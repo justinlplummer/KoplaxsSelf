@@ -184,15 +184,15 @@ def bot(op):
                 	f=codecs.open('st2__b.json','w','utf-8')
                 	json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
                 except:
-			random.choice(KAC).sendText(op.param1,random.choice(KAC).getContact(op.param2).displayName + "Jangan Buka Kode QR Njiiir")
-			random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
-			X = random.choice(KAC).getGroup(op.param1)
-			X.preventJoinByTicket = True
-			random.choice(KAC).updateGroup(X)
-			random.choice(KAC).sendText(op.param1,random.choice(KAC).getContact(op.param2).displayName + "\n" + "Kami Masukin Kedalam Blacklis Boss")
-			wait["blacklist"][op.param2] = True
-			f=codecs.open('st2__b.json','w','utf-8')
-			json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
+                        random.choice(KAC).sendText(op.param1,random.choice(KAC).getContact(op.param2).displayName + "Jangan Buka Kode QR Njiiir")
+                        random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
+                        X = random.choice(KAC).getGroup(op.param1)
+                        X.preventJoinByTicket = True
+                        random.choice(KAC).updateGroup(X)
+                        random.choice(KAC).sendText(op.param1,random.choice(KAC).getContact(op.param2).displayName + "\n" + "Kami Masukin Kedalam Blacklis Boss")
+                        wait["blacklist"][op.param2] = True
+                        f=codecs.open('st2__b.json','w','utf-8')
+                        json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
         #------Protect Group Kick finish-----#
 
         #------Cancel Invite User start------#
