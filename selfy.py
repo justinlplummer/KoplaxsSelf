@@ -1812,7 +1812,7 @@ def bot(op):
             elif "Unban @" in msg.text:
               #if msg.from_ in admin:
                 if msg.toType == 2:
-                    print "[Unban] Sukses"
+                    print ("[Unban] Success")
                     _name = msg.text.replace("Unban @","")
                     _nametarget = _name.rstrip('  ')
                     gs = cl.getGroup(msg.to)
@@ -2095,14 +2095,14 @@ def bot(op):
           cl.sendText(op.param1, "Selamat Datang Di Grup  " + ">>>" + str(ginfo.name) + "<<<" + "\n" + "Founder Grup " + str(ginfo.name) + " :\n" + ginfo.creator.displayName + "\n\n" + "Budayakan Baca Note !!! yah Ka 😊\nSemoga Betah Kk 😘")
           #cl.sendText(op.param1, "Founder Grup " + str(ginfo.name) + " :\n" + ginfo.creator.displayName)
           #cl.choice(KAC).sendText(op.param1,"Budayakan Baca Note !!! yah Ka 😊\nSemoga Betah Kk 😘")
-          #print "MEMBER HAS JOIN THE GROUP"
+          #print ("MEMBER HAS JOIN THE GROUP")
 #------------------------
         if op.type == 59:
-            print op
+            print (op)
 
 
     except Exception as error:
-        print error
+        print (error)
 
 
 def a2():
