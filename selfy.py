@@ -1697,7 +1697,7 @@ def bot(op):
             elif "Ready op" in msg.text:
               if msg.from_ in owner:
                 if msg.toType == 2:
-                    print "ok"
+                    print ("ok")
                     _name = msg.text.replace("Ready op","")
                     gs = cl.getGroup(msg.to)
                     gs = ki.getGroup(msg.to)
