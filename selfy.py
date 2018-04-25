@@ -508,7 +508,7 @@ def bot(op):
                 random.choice(KAC).inviteIntoGroup(msg.to,[midd])
     #--------------- SC Add Admin ---------
             elif "Admin add @" in msg.text:
-              print "[Command]Staff add executing"
+              print ("[Command]Staff add executing")
               _name = msg.text.replace("Admin add @","")
               _nametarget = _name.rstrip('  ')
               gs = cl.getGroup(msg.to)
@@ -527,13 +527,13 @@ def bot(op):
                     cl.sendText(msg.to,"Admin Ditambahkan")
                   except:
                     pass
-                #print "[Command]Staff add executed"
+                #print ("[Command]Staff add executed")
               #else:
                 #cl.sendText(msg.to,"Command denied.")
                 #cl.sendText(msg.to,"Admin permission required.")
                 
             elif "Admin remove @" in msg.text:
-                print "[Command]Staff remove executing"
+                print ("[Command]Staff remove executing")
                 _name = msg.text.replace("Admin remove @","")
                 _nametarget = _name.rstrip('  ')
                 gs = cl.getGroup(msg.to)
@@ -553,7 +553,7 @@ def bot(op):
                             cl.sendText(msg.to,"Admin Dihapus")
                         except:
                             pass
-                #print "[Command]Staff remove executed"
+                #print ("[Command]Staff remove executed")
               #else:
                 #cl.sendText(msg.to,"Command denied.")
                 #cl.sendText(msg.to,"Admin permission required.")
@@ -567,12 +567,12 @@ def bot(op):
                   for mi_d in admin:
                       mc += "••>" +cl.getContact(mi_d).displayName + "\n"
                   cl.sendText(msg.to,mc)
-                  print "[Command]Stafflist executed"
+                  print ("[Command]Stafflist executed")
     #--------------------------------------
     #-------------- Add Friends ------------
             elif "Bot Add @" in msg.text:
               if msg.toType == 2:
-                  print "[Command]Add executing"
+                  print ("[Command]Add executing")
                   _name = msg.text.replace("Bot Add @","")
                   _nametarget = _name.rstrip('  ')
                   gs = cl.getGroup(msg.to)
@@ -1583,7 +1583,7 @@ def bot(op):
                         ginfo = cl.getGroup(msg.to)
                         H.preventJoinByTicket = True
                         cl.updateGroup(H)
-                        print "Semua Sudah Lengkap"
+                        print ("Semua Sudah Lengkap")
     #----------------------Fungsi Join Group Finish---------------#
 
     #-------------Fungsi Leave Group Start---------------#
