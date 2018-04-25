@@ -222,7 +222,7 @@ def bot(op):
                 else:
                   cl.rejectGroupInvitation(op.param1)
               else:
-                print "autoJoin is Off"
+                print ("autoJoin is Off")
                 
             if kimid in op.param3:
               if wait["autoJoin"] == True:
