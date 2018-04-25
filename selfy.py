@@ -1692,7 +1692,7 @@ def bot(op):
                       cl.CloneContactProfile(target)
                       cl.sendText(msg.to,"Success Copy")
                     except Exception as e:
-                      print e
+                      print (e)
         #-----------------------------------------
             elif "Ready op" in msg.text:
               if msg.from_ in owner:
@@ -1771,7 +1771,7 @@ def bot(op):
             elif "Banned @" in msg.text:
               #if msg.from_ in admin:
                 if msg.toType == 2:
-                    print "[Banned] Sukses"
+                    print ("[Banned] Sukses")
                     _name = msg.text.replace("Banned @","")
                     _nametarget = _name.rstrip('  ')
                     gs = cl.getGroup(msg.to)
@@ -2123,11 +2123,11 @@ def autolike():
           ki.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Aku Juga Ikutin Boss Aku Like Status Kamu Ka\n\n Like Back yah Ka 😊")
           ki2.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1001)
           ki2.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Aku Juga Ikutin Boss Aku Like Status Kamu Ka\n\n Like Back yah Ka 😊")
-          print "Like"
+          print ("Like")
         except:
           pass
       else:
-          print "Already Liked"
+          print ("Already Liked")
 time.sleep(0.01)
 #thread3 = threading.Thread(target=autolike)
 #thread3.daemon = True
@@ -2144,11 +2144,11 @@ def likePost():
                     ki2.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
                     cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Auto like by ^૦Ո૯ ƿɿ૯८૯ ら૯ՆԲც૦੮^\nStatus Boss udah Kami Like\nOwner Kami :\nKoplaxs")
                     ki.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId']," ✰૦Ո૯ ƿɿ૯८૯ ら૯ՆԲც૦੮✰")
-                    print "Like"
+                    print ("Like")
                 except:
                     pass
             else:
-                print "Status Sudah di Like Plak"
+                print ("Status Sudah di Like Plak")
                 
 def nameUpdate():
     while True:
