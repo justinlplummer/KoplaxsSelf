@@ -231,7 +231,7 @@ def bot(op):
                 else:
                   ki.rejectGroupInvitation(op.param1)
               else:
-                print "autoJoin is Off"
+                print ("autoJoin is Off")
             
             if ki2mid in op.param3:
               if wait["autoJoin"] == True:
@@ -240,7 +240,7 @@ def bot(op):
                 else:
                   ki2.rejectGroupInvitation(op.param1)
               else:
-                print "autoJoin is Off"
+                print ("autoJoin is Off")
         #------Joined User Kick start------#
         if op.type == 17:
           if wait["Protectjoin"] == True:
