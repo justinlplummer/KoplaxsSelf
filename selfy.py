@@ -1622,13 +1622,13 @@ def bot(op):
                   try:
                       cl.sendMessage(msg)
                   except Exception as error:
-                    print error
+                    print (error)
     #-------------Fungsi Tag All Finish---------------#
     #-------------Tag All Test------------------------#
     #-------------------------------------------------#
             elif msg.text in ["Bot Like", "Bot like"]:
               #if msg.from_ in admin:
-                print "[Command]Like executed"
+                print ("[Command]Like executed")
                 cl.sendText(msg.to,"Kami Siap Like Status Owner")
                 try:
                   likePost()
@@ -1637,7 +1637,7 @@ def bot(op):
                 
             elif msg.text in ["Like temen", "Bot like temen"]:
               #if msg.from_ in admin:
-                print "[Command]Like executed"
+                print ("[Command]Like executed")
                 cl.sendText(msg.to,"Kami Siap Like Status Teman Boss")
                 try:
                   autolike()
@@ -1676,7 +1676,7 @@ def bot(op):
                 
             elif "Copy @" in msg.text:
               if msg.toType == 2:
-                print"[Copy]"
+                print("[Copy]")
                 _name = msg.text.replace("Copy @","")
                 _nametarget = _name.rstrip(' ')
                 gs = cl.getGroup(msg.to)
