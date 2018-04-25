@@ -1,15 +1,15 @@
-# KoplaxsSelfBot
-Koplaxs Self Bot
+JUSTIN SELFBOT
+
 Basic Sc By : LINE TCR
 ============================================
-Bot Protect Versi Selfbot 1 Self + 2 Assist
+Bot Protect USING 1 Selfbot + 2 Assist
 ============================================
-Bot Protect TCR Versi Selfbot
--Siapkan 1 Akun Utama Dan 2 Akun Bot
+Bot Protect TCR Selfbot
 
-Fungsinya?
-Kelebihan :
-1.Protect Group Line Pastinya
+
+FUNCTIONS
+
+1.Protect Line Group
 2.Bisa Invite Semua Bot Lewat Command Tanpa Bot Induk
 3.Bot Tidak Saling Kick Ketika Ada Yang Terkick
 
