@@ -787,17 +787,17 @@ def bot(op):
                         wait["atjointicket"]=False
                 cl.sendText(msg.to,"Auto Join Group by Ticket is %s" % str(wait["atjointicket"]))
             elif '/ti/g/' in msg.text.lower():
-		link_re = re.compile('(?:line\:\/|line\.me\/R)\/ti\/g\/([a-zA-Z0-9_-]+)?')
-		links = link_re.findall(msg.text)
-		n_links=[]
-		for l in links:
-			if l not in n_links:
-				n_links.append(l)
-		for ticket_id in n_links:
-			if wait["atjointicket"] == True:
-				group=cl.findGroupByTicket(ticket_id)
-				cl.acceptGroupInvitationByTicket(group.mid,ticket_id)
-				cl.sendText(msg.to,"Sukses join ke grup %s" % str(group.name))
+                link_re = re.compile('(?:line\:\/|line\.me\/R)\/ti\/g\/([a-zA-Z0-9_-]+)?')
+                links = link_re.findall(msg.text)
+                n_links=[]
+                for l in links:
+                        if l not in n_links:
+                                n_links.append(l)
+                for ticket_id in n_links:
+                        if wait["atjointicket"] == True:
+                                group=cl.findGroupByTicket(ticket_id)
+                                cl.acceptGroupInvitationByTicket(group.mid,ticket_id)
+                                cl.sendText(msg.to,"Sukses join ke grup %s" % str(group.name))
                      
             elif "Ginfo" == msg.text:
               if msg.toType == 2:
