@@ -780,12 +780,12 @@ def bot(op):
                         cl.sendText(msg.to,"Not for use less than group")
             
             elif "jointicket " in msg.text.lower():
-		rplace=msg.text.lower().replace("jointicket ")
-		if rplace == "on":
-			wait["atjointicket"]=True
-		elif rplace == "off":
-			wait["atjointicket"]=False
-		cl.sendText(msg.to,"Auto Join Group by Ticket is %s" % str(wait["atjointicket"]))
+                rplace=msg.text.lower().replace("jointicket ")
+                if rplace == "on":
+                        wait["atjointicket"]=True
+                elif rplace == "off":
+                        wait["atjointicket"]=False
+                cl.sendText(msg.to,"Auto Join Group by Ticket is %s" % str(wait["atjointicket"]))
             elif '/ti/g/' in msg.text.lower():
 		link_re = re.compile('(?:line\:\/|line\.me\/R)\/ti\/g\/([a-zA-Z0-9_-]+)?')
 		links = link_re.findall(msg.text)
